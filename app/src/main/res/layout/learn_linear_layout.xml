@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- DISPLAY – 20% -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="end|center_vertical"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:text="0"
+        android:textSize="80sp"
+        android:textColor="#FFFFFF"
+         />
+
+    <!-- KEYPAD – 80% -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:useDefaultMargins="true">
+
+        <!-- Row 1 -->
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btnAC"
+            android:onClick="onDigitClick"
+            android:text="AC"
+             />
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btnAddMinus"
+            android:onClick="onDigitClick"
+            android:text="+/-"
+             />
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btnPercent"
+            android:onClick="onDigitClick"
+            android:text="%"
+             />
+
+        <Button
+            style="@style/CalcOpCircle"
+            android:id="@+id/btnDivide"
+            android:onClick="onOperatorClick"
+            android:text="÷"
+             />
+
+        <!-- Row 2 -->
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn7"
+            android:onClick="onDigitClick"
+            android:text="7"
+             />
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn8"
+            android:onClick="onDigitClick"
+            android:text="8"
+             />
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn9"
+            android:onClick="onDigitClick"
+            android:text="9"
+             />
+
+        <Button
+            style="@style/CalcOpCircle"
+            android:id="@+id/btnMultiply"
+            android:onClick="onOperatorClick"
+            android:text="×"
+             />
+
+        <!-- Row 3 -->
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn4"
+            android:onClick="onDigitClick"
+            android:text="4"
+             />
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn5"
+            android:onClick="onDigitClick"
+            android:text="5"
+             />
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn6"
+            android:onClick="onDigitClick"
+            android:text="6"
+             />
+
+        <Button
+            style="@style/CalcOpCircle"
+            android:id="@+id/btnMinus"
+            android:onClick="onOperatorClick"
+            android:text="−"
+             />
+
+        <!-- Row 4 -->
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn1"
+            android:onClick="onDigitClick"
+            android:text="1"
+             />
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn2"
+            android:onClick="onDigitClick"
+            android:text="2"
+             />
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn3"
+            android:onClick="onDigitClick"
+            android:text="3"
+             />
+
+        <Button
+            style="@style/CalcOpCircle"
+            android:id="@+id/btnAdd"
+            android:onClick="onOperatorClick"
+            android:text="+"
+             />
+
+        <!-- Row 5-->
+
+        <Button
+            style="@style/CalcBtnCircle"
+            android:id="@+id/btn0"
+            android:onClick="onDigitClick"
+            android:text="0"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            />
+
+
+        <Button
+            style="@style/CalcDelCircle"
+            android:id="@+id/btnDelete"
+            android:onClick="onDigitClick"
+            android:text="DEL"
+             />
+
+        <Button
+            style="@style/CalcOpCircle"
+            android:id="@+id/btnEqual"
+            android:onClick="onOperatorClick"
+            android:text="="
+             />
+
+    </GridLayout>
+
+
+</LinearLayout>

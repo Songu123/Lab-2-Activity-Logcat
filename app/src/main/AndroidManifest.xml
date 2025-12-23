@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab2ActivityLogcat">
         <activity
-            android:name=".Coffee"
+            android:name=".MainActivity1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SecondActivity"
+            android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Lab2ActivityLogcat" />
     </application>

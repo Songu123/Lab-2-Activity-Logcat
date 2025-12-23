@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalcBtnCircle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+
+        <item name="android:layout_margin">6dp</item>
+
+
+        <!-- QUAN TRỌNG -->
+        <item name="backgroundTint">@color/dark_btn</item>
+        <item name="cornerRadius">999dp</item>
+
+
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CalcOpCircle" parent="CalcBtnCircle">
+        <item name="android:layout_margin">6dp</item>
+        <item name="backgroundTint">@color/orange_btn</item>
+    </style>
+
+    <style name="CalcDelCircle" parent="CalcBtnCircle">
+        <item name="android:layout_margin">6dp</item>
+        <item name="backgroundTint">@color/gray_btn</item>
+    </style>
+
+</resources>
